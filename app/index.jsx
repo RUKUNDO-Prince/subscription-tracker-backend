@@ -21,7 +21,7 @@ export default function App() {
             resizeMode="contain"
           />
           <View className="relative mt-5">
-            <Text className="text-3xl text-white font-bold text-center">Discover Endless Possibilities with {" "}<Text className="text-secondary-200">Aora</Text></Text>
+            <Text className="text-3xl text-white font-bold text-center">Discover The Endless Possibilities with {" "}<Text className="text-secondary-200">Aora</Text></Text>
             <Image 
               source={images.path}
               className="w-[136px] h-[15px] absolute border-bottom-2 -right-8"
