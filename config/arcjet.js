@@ -1,15 +1,14 @@
 import arcjet, { shield, detectBot, tokenBucket } from "@arcjet/node";
-import { ARCJET_KEY } from "./env.js";
+import { ARCJET_KEY } from './env.js'
 
 const aj = arcjet({
   key: ARCJET_KEY,
   characteristics: ["ip.src"],
   rules: [
     shield({ mode: "LIVE" }),
-    // Create a bot detection rule
     detectBot({
       mode: "LIVE",
-      allow: ["CATEGORY:SEARCH_ENGINE"],
+      allow: [ "CATEGORY:SEARCH_ENGINE" ],
     }),
     tokenBucket({
       mode: "LIVE",
